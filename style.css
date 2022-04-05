@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  outline: none;
+}
+body {
+  overflow: hidden;
+  background-image: url(images/Clear.jpg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.app-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  /* background-color: #151e3c; */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.app-main .search-box input {
+  width: 250px;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #151d3b;
+}
+.weather-body {
+  display: none;
+}
+.location-info .cityName,
+.date {
+  margin: 15px 0 10px 0;
+  font-size: 1.3rem;
+  color: white;
+}
+.date {
+  font-size: 1.1rem;
+}
+.weather-status .temp {
+  font-size: 3rem;
+  color: white;
+  margin: 15px;
+}
+
+.weather-status .min-max,
+.weather {
+  font-size: 1.2rem;
+  color: white;
+  margin: 15px;
+}
